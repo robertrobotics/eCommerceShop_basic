@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.808.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3BEE47F3-C4C5-404A-A59A-3BD6F8BE2572}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{74DB4A3D-CB3F-4AAA-92A6-777BF9EB2159}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{CB002D9E-35B4-4ABE-AA64-32F3BC5533C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{B1275481-F7D2-4154-B684-522ADAF2DD18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{64BE7BAE-C096-47CE-99B1-F9A4B13E499F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bff.Web", "Bff.Web", "{F61A72AA-80CD-4F81-A25B-00154A0A51B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bff.Mobile", "Bff.Mobile", "{EAC6E7D1-BD21-45A9-9B3D-E4C825B58D10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.HttpAggregator", "Web.HttpAggregator\Web.HttpAggregator.csproj", "{E7A4A7A6-20BC-4681-B300-3F434C548425}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mobile.HttpAggregator", "Mobile.HttpAggregator\Mobile.HttpAggregator.csproj", "{EDEDF8CF-6CDE-47CF-823E-080387D27E72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7A4A7A6-20BC-4681-B300-3F434C548425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7A4A7A6-20BC-4681-B300-3F434C548425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7A4A7A6-20BC-4681-B300-3F434C548425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7A4A7A6-20BC-4681-B300-3F434C548425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDEDF8CF-6CDE-47CF-823E-080387D27E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDEDF8CF-6CDE-47CF-823E-080387D27E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDEDF8CF-6CDE-47CF-823E-080387D27E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDEDF8CF-6CDE-47CF-823E-080387D27E72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6CB7716-45C1-4C8D-A516-50BB8C6B82FE}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CB002D9E-35B4-4ABE-AA64-32F3BC5533C7} = {3BEE47F3-C4C5-404A-A59A-3BD6F8BE2572}
+		{B1275481-F7D2-4154-B684-522ADAF2DD18} = {3BEE47F3-C4C5-404A-A59A-3BD6F8BE2572}
+		{64BE7BAE-C096-47CE-99B1-F9A4B13E499F} = {3BEE47F3-C4C5-404A-A59A-3BD6F8BE2572}
+		{F61A72AA-80CD-4F81-A25B-00154A0A51B6} = {CB002D9E-35B4-4ABE-AA64-32F3BC5533C7}
+		{EAC6E7D1-BD21-45A9-9B3D-E4C825B58D10} = {CB002D9E-35B4-4ABE-AA64-32F3BC5533C7}
+		{E7A4A7A6-20BC-4681-B300-3F434C548425} = {F61A72AA-80CD-4F81-A25B-00154A0A51B6}
+		{EDEDF8CF-6CDE-47CF-823E-080387D27E72} = {EAC6E7D1-BD21-45A9-9B3D-E4C825B58D10}
+	EndGlobalSection
+EndGlobal
