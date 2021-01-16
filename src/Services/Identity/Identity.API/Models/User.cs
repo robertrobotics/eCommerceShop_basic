@@ -1,13 +1,9 @@
-using System.ComponentModel.DataAnnotations;
-
 namespace Identity.API.Models
 {
-    public class AuthenticationRequest
+        public class User
     {
-        [Required]
+        public int Id { get; set; } 
         public string Username { get; set; }
-
-        [Required]
         public string Password { get; set; }
     }
 }
