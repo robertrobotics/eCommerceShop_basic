@@ -1,3 +1,4 @@
+using System.Threading.Tasks;
 using Identity.API.Data;
 using Identity.API.Models;
 using Identity.API.Services;
@@ -27,7 +28,19 @@ namespace Identity.API.Controllers
             if (dbUser == null)
                 return NotFound("User does not exist.");
 
-            // TODO: verify user's password with hash'n'salt 
+            var validationResult = await ValidateUser(user);
+
+            return validationResult ? Ok(/*token*/) : BadRequest("Wrong username or password."); 
+        }
+
+        private async Task<bool> ValidateUser(User userToBeValidated)
+        {
+            var userDb = await _context.Users.FirstAsync(u => userToBeValidated.Username == u.Username);
+            if (userDb == null)
+                return false;
+            
+            // TODO: check hashed password with candidate's info
+            return false;
         }
     }
 }

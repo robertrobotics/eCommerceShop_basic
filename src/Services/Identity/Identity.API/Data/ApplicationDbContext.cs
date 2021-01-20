@@ -17,7 +17,7 @@ namespace Identity.API.Data
 
             builder.Entity<User>()
                    .HasData(
-                       new User() { Id = 1, Username = "User1", Password = "secretpassword",  }
+                       new User() { Id = 1, Username = "User1", HashedPassword = "secrethashedsaltedpassword",  }
                    );
         }
     }
