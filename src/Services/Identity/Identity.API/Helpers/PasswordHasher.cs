@@ -1,5 +1,6 @@
 using System;
 using System.Security.Cryptography;
+using System.Threading.Tasks;
 using Identity.API.Interfaces;
 using Identity.API.Models;
 
@@ -14,7 +15,7 @@ namespace Identity.API.Helpers
         {
         }   
 
-        public IEncryptedUser GetEncryptedUserInfo(string password)
+        public EncryptedUser GetEncryptedUserInfo(string password)
         {
             if (string.IsNullOrEmpty(password))
                 throw new ArgumentNullException(nameof(password), "Provided password cannot be equal to null!");
